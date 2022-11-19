@@ -2,7 +2,7 @@ require 'os'
 require 'engine'
 require 'convert'
 
-local file = io.open("../test_data.json", "w")
+local file = io.open("../qa_data.json", "w")
 if not file then
     print("failed to open output file : test_data.lua")
 else
@@ -41,6 +41,72 @@ gdRca = {}
 -- action
 gdAction = {}
 
+-- 记录最新的一周
+newWeek = 0
+
+-- 平台
+gdEnumPlatform = {}
+function handle_platform(str)
+	local isHave = false 
+	for key, value in pairs(gdEnumPlatform) do
+		if value == str then
+			isHave = true
+			break
+		end
+	end
+	if not isHave then
+		table.insert(gdEnumPlatform, str)
+	end
+
+	return #gdEnumPlatform
+end
+
+-- 回邮件员工
+gdAdvisor = {}
+function handle_advisor(str)
+	local isHave = false 
+	for key, value in pairs(gdAdvisor) do
+		if value == str then
+			isHave = true
+			break
+		end
+	end
+	if not isHave then
+		table.insert(gdAdvisor, str)
+	end
+end
+
+-- 质检员工
+gdEvalutor = {}
+function handle_evalutor(str)
+	local isHave = false 
+	for key, value in pairs(gdEvalutor) do
+		if value == str then
+			isHave = true
+			break
+		end
+	end
+	if not isHave then
+		table.insert(gdEvalutor, str)
+	end
+end
+
+-- 质检方式
+gdEnumQAType = {}
+function handle_qa_type(str)
+	local isHave = false 
+	for key, value in pairs(gdEnumQAType) do
+		if value == str then
+			isHave = true
+			break
+		end
+	end
+	if not isHave then
+		table.insert(gdEnumQAType, str)
+	end
+
+	return #gdEnumQAType
+end
 
 gdEnumTallyS = {}
 function handle_tally_s(str)
@@ -130,6 +196,10 @@ function handle_record(o)
 			local time = os.time({year = year, month = month, day = day, hour = 0, minute = 0, second = 0})
 			record.qaTime = time
 			record.qaWeek = tonumber(os.date("%W", time))
+
+			if record.qaWeek + 1 > newWeek then
+				newWeek = record.qaWeek + 1
+			end
 		end
     end
 	if o.b and o.b ~= "" then
@@ -149,9 +219,11 @@ function handle_record(o)
 		end
     end
 	record.name = o.h
-	record.platform = o.g
+	handle_advisor(record.name)
+	record.platform = handle_platform(o.g)
 	record.qaName = o.e
-	record.qaType = o.f
+	handle_evalutor(record.qaName)
+	record.qaType = handle_qa_type(o.f)
 	record.rca = parse_string(o.ca)
 	record.action = parse_string(o.cb)
 	record.datas = handle_tally_s(o.j)
@@ -382,6 +454,50 @@ end
 
 export_csv("..\\design\\W46_Neusoft_Chat_QA_Record.xlsx")
 handle_file("tmp\\Rawdata.csv", handle_record)
+
+file:write([[
+
+"newWeek":]] .. newWeek .. ",\n")
+
+file:write([[
+
+"gdEnumPlatform":]])
+output_json(gdEnumPlatform, file, ",")
+
+file:write([[
+
+"gdAdvisor":]])
+output_json(gdAdvisor, file, ",")
+
+file:write([[
+
+"gdEvalutor":]])
+output_json(gdEvalutor, file, ",")
+
+file:write([[
+
+"gdEnumQAType":]])
+output_json(gdEnumQAType, file, ",")
+
+file:write([[
+
+"gdEnumTallyS":]])
+output_json(gdEnumTallyS, file, ",")
+
+file:write([[
+
+"gdEnumTallyX":]])
+output_json(gdEnumTallyX, file, ",")
+
+file:write([[
+
+"gdEnumTallyY":]])
+output_json(gdEnumTallyY, file, ",")
+
+file:write([[
+
+"gdEnumTallyZ":]])
+output_json(gdEnumTallyZ, file, ",")
 
 file:write([[
 

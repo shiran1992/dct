@@ -1,8 +1,8 @@
-@lua.exe do_test.lua
+@lua.exe do_qa_data.lua
 
 @cd ..
 @cd BizCharts
-npm start
+
 
 @pause
 
