@@ -1,4 +1,4 @@
-@lua.exe do_qa_data.lua
+@lua.exe do_qa_func.lua
 
 @cd ..
 @cd BizCharts

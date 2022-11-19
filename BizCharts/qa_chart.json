@@ -1,0 +1,15 @@
+
+{
+"gdWeekTrend":[
+	{"count":21,"platform":"Neusoft","rate":86.4,"sum":1814.47,"week":38},
+	{"count":28,"platform":"Neusoft","rate":91.7,"sum":2567.59,"week":39},
+	{"count":32,"platform":"Neusoft","rate":92.18,"sum":2949.92,"week":40},
+	{"count":27,"platform":"Neusoft","rate":92.68,"sum":2502.34,"week":41},
+	{"count":33,"platform":"Neusoft","rate":91.75,"sum":3027.6,"week":42},
+	{"count":36,"platform":"Neusoft","rate":94.01,"sum":3384.36,"week":43},
+	{"count":35,"platform":"Neusoft","rate":92.98,"sum":3254.26,"week":44},
+	{"count":35,"platform":"Neusoft","rate":92.36,"sum":3232.55,"week":45},
+	{"count":35,"platform":"Neusoft","rate":92.63,"sum":3242.04,"week":46}
+]
+		
+}

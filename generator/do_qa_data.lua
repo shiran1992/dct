@@ -195,10 +195,10 @@ function handle_record(o)
 			end
 			local time = os.time({year = year, month = month, day = day, hour = 0, minute = 0, second = 0})
 			record.qaTime = time
-			record.qaWeek = tonumber(os.date("%W", time))
+			record.qaWeek = tonumber(os.date("%W", time)) + 1
 
-			if record.qaWeek + 1 > newWeek then
-				newWeek = record.qaWeek + 1
+			if record.qaWeek > newWeek then
+				newWeek = record.qaWeek
 			end
 		end
     end
@@ -450,7 +450,44 @@ function handle_record(o)
 	end
 	record.rate = tonumber(string.format("%.2f", right / count * 100))
 	gdRecord[id] = record
+
+
+	handle_week_trend()
 end
+
+
+
+
+--------------------------------------------   function start   ---------------------------------------------------
+-- 东软每周趋势
+gdWeekTrend = {}
+function handle_week_trend()
+	local weekData = {}
+	for k, v in pairs(gdRecord) do
+		if v.platform == 1 then
+			if not weekData[v.qaWeek] then
+				weekData[v.qaWeek] = {}
+			end
+			table.insert(weekData[v.qaWeek], v)
+		end
+	end
+	
+	for k = 1, 60, 1 do
+		local v = weekData[k]
+		if v then
+			local weekCount = {week = k, platform = gdEnumPlatform[1], count = 0, sum = 0, rate = 0}
+			for kk, vv in pairs(v) do
+				weekCount.count = weekCount.count + 1
+				weekCount.sum = weekCount.sum + vv.rate
+			end
+			if weekCount.count > 0 then
+				weekCount.rate = tonumber(string.format("%.2f", weekCount.sum / weekCount.count))
+			end
+			table.insert(gdWeekTrend, weekCount)
+		end
+	end
+end
+--------------------------------------------   function end     ---------------------------------------------------
 
 export_csv("..\\design\\W46_Neusoft_Chat_QA_Record.xlsx")
 handle_file("tmp\\Rawdata.csv", handle_record)
@@ -562,7 +599,12 @@ output_json(gdPrivacy, file, ",")
 file:write([[
 
 "gdFatal":]])
-output_json(gdFatal, file)
+output_json(gdFatal, file, ",")
+
+file:write([[
+
+"gdWeekTrend":]])
+output_json(gdWeekTrend, file)
 
 
 

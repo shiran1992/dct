@@ -2,7 +2,6 @@ import * as antUtils from '@antv/util';
 import * as Annotation from './components/Annotation';
 import * as G2 from './g2-all';
 import * as GComponents from './g-components';
-
 import * as bxUtil from './utils';
 
 export const Util = {
