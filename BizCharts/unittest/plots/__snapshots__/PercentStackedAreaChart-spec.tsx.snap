@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Plots-PercentStackedAreaChart 百分比堆叠面积图-旧版 1`] = `
+Object {
+  "animation": true,
+  "appendPadding": Array [
+    10,
+    5,
+    10,
+    10,
+  ],
+  "autoFit": true,
+  "data": Array [
+    Object {
+      "label": "Mon.",
+      "type": "series1",
+      "value": 2800,
+    },
+    Object {
+      "label": "Mon.",
+      "type": "series2",
+      "value": 2260,
+    },
+    Object {
+      "label": "Tues.",
+      "type": "series1",
+      "value": 1800,
+    },
+    Object {
+      "label": "Tues.",
+      "type": "series2",
+      "value": 1300,
+    },
+    Object {
+      "label": "Wed.",
+      "type": "series1",
+      "value": 950,
+    },
+    Object {
+      "label": "Wed.",
+      "type": "series2",
+      "value": 900,
+    },
+    Object {
+      "label": "Thur.",
+      "type": "series1",
+      "value": 500,
+    },
+    Object {
+      "label": "Thur.",
+      "type": "series2",
+      "value": 390,
+    },
+    Object {
+      "label": "Fri.",
+      "type": "series1",
+      "value": 170,
+    },
+    Object {
+      "label": "Fri.",
+      "type": "series2",
+      "value": 100,
+    },
+  ],
+  "isPercent": true,
+  "isStack": false,
+  "legend": Object {
+    "position": "top-left",
+  },
+  "line": Object {},
+  "renderer": "canvas",
+  "seriesField": "type",
+  "stackField": "type",
+  "tooltip": Object {
+    "crosshairs": Object {
+      "type": "x",
+    },
+    "shared": true,
+    "showCrosshairs": true,
+    "showMarkers": true,
+  },
+  "xAxis": Object {
+    "label": Object {
+      "autoHide": Object {
+        "cfg": Object {
+          "minGap": 6,
+        },
+        "type": "equidistance",
+      },
+      "autoRotate": false,
+    },
+    "nice": true,
+  },
+  "xField": "label",
+  "yAxis": Object {
+    "label": Object {
+      "autoHide": true,
+      "autoRotate": false,
+    },
+    "nice": true,
+  },
+  "yField": "value",
+}
+`;

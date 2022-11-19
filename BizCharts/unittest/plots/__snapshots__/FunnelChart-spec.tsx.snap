@@ -1,0 +1,289 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Plots-FunnelChart 基础漏斗图 1`] = `
+Object {
+  "appendPadding": Array [
+    10,
+    5,
+    10,
+    10,
+  ],
+  "autoFit": true,
+  "compareField": "quarter",
+  "conversionTag": Object {
+    "offsetX": 10,
+    "offsetY": 0,
+    "style": Object {
+      "fill": "rgba(0,0,0,0.45)",
+      "fontSize": 12,
+    },
+  },
+  "data": Array [
+    Object {
+      "action": "浏览网站",
+      "pv": 50000,
+      "quarter": "2020Q1",
+    },
+    Object {
+      "action": "放入购物车",
+      "pv": 35000,
+      "quarter": "2020Q1",
+    },
+    Object {
+      "action": "生成订单",
+      "pv": 25000,
+      "quarter": "2020Q1",
+    },
+    Object {
+      "action": "支付订单",
+      "pv": 15000,
+      "quarter": "2020Q1",
+    },
+    Object {
+      "action": "完成交易",
+      "pv": 11500,
+      "quarter": "2020Q1",
+    },
+    Object {
+      "action": "浏览网站",
+      "pv": 80000,
+      "quarter": "2020Q2",
+    },
+    Object {
+      "action": "放入购物车",
+      "pv": 63000,
+      "quarter": "2020Q2",
+    },
+    Object {
+      "action": "生成订单",
+      "pv": 47000,
+      "quarter": "2020Q2",
+    },
+    Object {
+      "action": "支付订单",
+      "pv": 24000,
+      "quarter": "2020Q2",
+    },
+    Object {
+      "action": "完成交易",
+      "pv": 17500,
+      "quarter": "2020Q2",
+    },
+  ],
+  "label": Object {
+    "style": Object {
+      "fill": "#fff",
+      "fontSize": 12,
+    },
+  },
+  "maxSize": 1,
+  "meta": Object {
+    "$$mappingValue$$": Object {
+      "max": 1,
+      "min": 0,
+      "nice": false,
+    },
+  },
+  "minSize": 0,
+  "tooltip": Object {
+    "shared": false,
+    "showMarkers": false,
+    "showTitle": false,
+  },
+  "xField": "action",
+  "yField": "pv",
+}
+`;
+
+exports[`Plots-FunnelChart 旧版漏斗图 transpose --> isTransposed 1`] = `
+Object {
+  "appendPadding": Array [
+    10,
+    5,
+    10,
+    10,
+  ],
+  "autoFit": true,
+  "compareField": "quarter",
+  "conversionTag": Object {
+    "offsetX": 10,
+    "offsetY": 0,
+    "style": Object {
+      "fill": "rgba(0,0,0,0.45)",
+      "fontSize": 12,
+    },
+  },
+  "data": Array [
+    Object {
+      "action": "浏览网站",
+      "pv": 50000,
+      "quarter": "2020Q1",
+    },
+    Object {
+      "action": "放入购物车",
+      "pv": 35000,
+      "quarter": "2020Q1",
+    },
+    Object {
+      "action": "生成订单",
+      "pv": 25000,
+      "quarter": "2020Q1",
+    },
+    Object {
+      "action": "支付订单",
+      "pv": 15000,
+      "quarter": "2020Q1",
+    },
+    Object {
+      "action": "完成交易",
+      "pv": 11500,
+      "quarter": "2020Q1",
+    },
+    Object {
+      "action": "浏览网站",
+      "pv": 80000,
+      "quarter": "2020Q2",
+    },
+    Object {
+      "action": "放入购物车",
+      "pv": 63000,
+      "quarter": "2020Q2",
+    },
+    Object {
+      "action": "生成订单",
+      "pv": 47000,
+      "quarter": "2020Q2",
+    },
+    Object {
+      "action": "支付订单",
+      "pv": 24000,
+      "quarter": "2020Q2",
+    },
+    Object {
+      "action": "完成交易",
+      "pv": 17500,
+      "quarter": "2020Q2",
+    },
+  ],
+  "isTransposed": true,
+  "label": Object {
+    "style": Object {
+      "fill": "#fff",
+      "fontSize": 12,
+    },
+  },
+  "maxSize": 1,
+  "meta": Object {
+    "$$mappingValue$$": Object {
+      "max": 1,
+      "min": 0,
+      "nice": false,
+    },
+  },
+  "minSize": 0,
+  "tooltip": Object {
+    "shared": false,
+    "showMarkers": false,
+    "showTitle": false,
+  },
+  "transpose": true,
+  "xField": "action",
+  "yField": "pv",
+}
+`;
+
+exports[`Plots-FunnelChart 水平漏斗图 1`] = `
+Object {
+  "appendPadding": Array [
+    10,
+    5,
+    10,
+    10,
+  ],
+  "autoFit": true,
+  "compareField": "quarter",
+  "conversionTag": Object {
+    "offsetX": 10,
+    "offsetY": 0,
+    "style": Object {
+      "fill": "rgba(0,0,0,0.45)",
+      "fontSize": 12,
+    },
+  },
+  "data": Array [
+    Object {
+      "action": "浏览网站",
+      "pv": 50000,
+      "quarter": "2020Q1",
+    },
+    Object {
+      "action": "放入购物车",
+      "pv": 35000,
+      "quarter": "2020Q1",
+    },
+    Object {
+      "action": "生成订单",
+      "pv": 25000,
+      "quarter": "2020Q1",
+    },
+    Object {
+      "action": "支付订单",
+      "pv": 15000,
+      "quarter": "2020Q1",
+    },
+    Object {
+      "action": "完成交易",
+      "pv": 11500,
+      "quarter": "2020Q1",
+    },
+    Object {
+      "action": "浏览网站",
+      "pv": 80000,
+      "quarter": "2020Q2",
+    },
+    Object {
+      "action": "放入购物车",
+      "pv": 63000,
+      "quarter": "2020Q2",
+    },
+    Object {
+      "action": "生成订单",
+      "pv": 47000,
+      "quarter": "2020Q2",
+    },
+    Object {
+      "action": "支付订单",
+      "pv": 24000,
+      "quarter": "2020Q2",
+    },
+    Object {
+      "action": "完成交易",
+      "pv": 17500,
+      "quarter": "2020Q2",
+    },
+  ],
+  "isTransposed": true,
+  "label": Object {
+    "style": Object {
+      "fill": "#fff",
+      "fontSize": 12,
+    },
+  },
+  "maxSize": 1,
+  "meta": Object {
+    "$$mappingValue$$": Object {
+      "max": 1,
+      "min": 0,
+      "nice": false,
+    },
+  },
+  "minSize": 0,
+  "tooltip": Object {
+    "shared": false,
+    "showMarkers": false,
+    "showTitle": false,
+  },
+  "xField": "action",
+  "yField": "pv",
+}
+`;

@@ -1,0 +1,833 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Plots-RoseChart label-inner-bug 1`] = `
+Object {
+  "animation": true,
+  "appendPadding": Array [
+    10,
+    5,
+    10,
+    10,
+  ],
+  "autoFit": true,
+  "data": Array [
+    Object {
+      "Date": "2010-01",
+      "scales": 1998,
+    },
+    Object {
+      "Date": "2010-02",
+      "scales": 1250,
+    },
+    Object {
+      "Date": "2010-03",
+      "scales": 1720,
+    },
+  ],
+  "height": 500,
+  "interactions": Array [
+    Object {
+      "type": "active-region",
+    },
+  ],
+  "label": Object {
+    "layout": Object {
+      "type": "limit-in-shape",
+    },
+    "offset": -15,
+    "visible": true,
+  },
+  "legend": Object {
+    "position": "right",
+  },
+  "padding": Array [
+    90,
+    90,
+    90,
+    90,
+  ],
+  "renderer": "canvas",
+  "sectorStyle": Object {
+    "lineWidth": 1,
+    "stroke": "#fff",
+  },
+  "seriesField": "Date",
+  "tooltip": Object {
+    "shared": true,
+    "showMarkers": false,
+  },
+  "width": 600,
+  "xAxis": false,
+  "xField": "Date",
+  "yAxis": false,
+  "yField": "scales",
+}
+`;
+
+exports[`Plots-RoseChart label-outer-bug 1`] = `
+Object {
+  "animation": true,
+  "appendPadding": Array [
+    10,
+    5,
+    10,
+    10,
+  ],
+  "autoFit": true,
+  "data": Array [
+    Object {
+      "Date": "2010-01",
+      "scales": 1998,
+    },
+    Object {
+      "Date": "2010-02",
+      "scales": 1250,
+    },
+    Object {
+      "Date": "2010-03",
+      "scales": 1720,
+    },
+  ],
+  "height": 500,
+  "interactions": Array [
+    Object {
+      "type": "active-region",
+    },
+  ],
+  "label": Object {
+    "layout": Object {
+      "type": "limit-in-shape",
+    },
+    "visible": true,
+  },
+  "legend": Object {
+    "position": "right",
+  },
+  "padding": Array [
+    90,
+    90,
+    90,
+    90,
+  ],
+  "renderer": "canvas",
+  "sectorStyle": Object {
+    "lineWidth": 1,
+    "stroke": "#fff",
+  },
+  "seriesField": "Date",
+  "tooltip": Object {
+    "shared": true,
+    "showMarkers": false,
+  },
+  "width": 600,
+  "xAxis": false,
+  "xField": "Date",
+  "yAxis": false,
+  "yField": "scales",
+}
+`;
+
+exports[`Plots-RoseChart label-玫瑰图 1`] = `
+Object {
+  "animation": true,
+  "appendPadding": Array [
+    10,
+    5,
+    10,
+    10,
+  ],
+  "autoFit": true,
+  "data": Array [
+    Object {
+      "Date": "2010-01",
+      "scales": 1998,
+    },
+    Object {
+      "Date": "2010-02",
+      "scales": 1250,
+    },
+    Object {
+      "Date": "2010-03",
+      "scales": 1720,
+    },
+  ],
+  "height": 500,
+  "interactions": Array [
+    Object {
+      "type": "active-region",
+    },
+  ],
+  "label": Object {
+    "autoRotate": true,
+    "formatter": [Function],
+    "layout": Object {
+      "type": "limit-in-shape",
+    },
+    "offsetX": 6,
+    "offsetY": 6,
+    "style": Object {
+      "fill": "red",
+    },
+    "visible": true,
+  },
+  "legend": Object {
+    "position": "right",
+  },
+  "padding": Array [
+    90,
+    90,
+    90,
+    90,
+  ],
+  "renderer": "canvas",
+  "sectorStyle": Object {
+    "lineWidth": 1,
+    "stroke": "#fff",
+  },
+  "seriesField": "Date",
+  "tooltip": Object {
+    "shared": true,
+    "showMarkers": false,
+  },
+  "width": 600,
+  "xAxis": false,
+  "xField": "Date",
+  "yAxis": false,
+  "yField": "scales",
+}
+`;
+
+exports[`Plots-RoseChart legend-玫瑰图 1`] = `
+Object {
+  "animation": true,
+  "appendPadding": Array [
+    10,
+    5,
+    10,
+    10,
+  ],
+  "autoFit": true,
+  "data": Array [
+    Object {
+      "Date": "2010-01",
+      "scales": 1998,
+    },
+    Object {
+      "Date": "2010-02",
+      "scales": 1250,
+    },
+    Object {
+      "Date": "2010-03",
+      "scales": 1720,
+    },
+  ],
+  "height": 500,
+  "interactions": Array [
+    Object {
+      "type": "active-region",
+    },
+  ],
+  "label": Object {
+    "layout": Object {
+      "type": "limit-in-shape",
+    },
+  },
+  "legend": Object {
+    "formatter": [MockFunction],
+    "itemName": Object {
+      "formatter": [MockFunction] {
+        "calls": Array [
+          Array [
+            "2010-01",
+            Object {
+              "id": "2010-01",
+              "marker": Object {
+                "spacing": 8,
+                "style": Object {
+                  "fill": "#5B8FF9",
+                  "r": 4.5,
+                },
+                "symbol": "circle",
+              },
+              "name": "2010-01",
+              "unchecked": false,
+              "value": "2010-01",
+            },
+            0,
+          ],
+          Array [
+            "2010-02",
+            Object {
+              "id": "2010-02",
+              "marker": Object {
+                "spacing": 8,
+                "style": Object {
+                  "fill": "#5AD8A6",
+                  "r": 4.5,
+                },
+                "symbol": "circle",
+              },
+              "name": "2010-02",
+              "unchecked": false,
+              "value": "2010-02",
+            },
+            1,
+          ],
+          Array [
+            "2010-03",
+            Object {
+              "id": "2010-03",
+              "marker": Object {
+                "spacing": 8,
+                "style": Object {
+                  "fill": "#5D7092",
+                  "r": 4.5,
+                },
+                "symbol": "circle",
+              },
+              "name": "2010-03",
+              "unchecked": false,
+              "value": "2010-03",
+            },
+            2,
+          ],
+          Array [
+            "2010-01",
+            Object {
+              "id": "2010-01",
+              "marker": Object {
+                "spacing": 8,
+                "style": Object {
+                  "fill": "#5B8FF9",
+                  "r": 4.5,
+                },
+                "symbol": "circle",
+              },
+              "name": "2010-01",
+              "unchecked": false,
+              "value": "2010-01",
+            },
+            0,
+          ],
+          Array [
+            "2010-02",
+            Object {
+              "id": "2010-02",
+              "marker": Object {
+                "spacing": 8,
+                "style": Object {
+                  "fill": "#5AD8A6",
+                  "r": 4.5,
+                },
+                "symbol": "circle",
+              },
+              "name": "2010-02",
+              "unchecked": false,
+              "value": "2010-02",
+            },
+            1,
+          ],
+          Array [
+            "2010-03",
+            Object {
+              "id": "2010-03",
+              "marker": Object {
+                "spacing": 8,
+                "style": Object {
+                  "fill": "#5D7092",
+                  "r": 4.5,
+                },
+                "symbol": "circle",
+              },
+              "name": "2010-03",
+              "unchecked": false,
+              "value": "2010-03",
+            },
+            2,
+          ],
+        ],
+        "results": Array [
+          Object {
+            "type": "return",
+            "value": "2010-01%",
+          },
+          Object {
+            "type": "return",
+            "value": "2010-02%",
+          },
+          Object {
+            "type": "return",
+            "value": "2010-03%",
+          },
+          Object {
+            "type": "return",
+            "value": "2010-01%",
+          },
+          Object {
+            "type": "return",
+            "value": "2010-02%",
+          },
+          Object {
+            "type": "return",
+            "value": "2010-03%",
+          },
+        ],
+      },
+      "style": Object {
+        "fill": "pink",
+        "stroke": "pink",
+      },
+    },
+    "marker": Object {
+      "symbol": "circle",
+    },
+    "offsetX": 40,
+    "offsetY": 2,
+    "position": "bottom",
+    "text": Object {
+      "formatter": [MockFunction] {
+        "calls": Array [
+          Array [
+            "2010-01",
+            Object {
+              "id": "2010-01",
+              "marker": Object {
+                "spacing": 8,
+                "style": Object {
+                  "fill": "#5B8FF9",
+                  "r": 4.5,
+                },
+                "symbol": "circle",
+              },
+              "name": "2010-01",
+              "unchecked": false,
+              "value": "2010-01",
+            },
+            0,
+          ],
+          Array [
+            "2010-02",
+            Object {
+              "id": "2010-02",
+              "marker": Object {
+                "spacing": 8,
+                "style": Object {
+                  "fill": "#5AD8A6",
+                  "r": 4.5,
+                },
+                "symbol": "circle",
+              },
+              "name": "2010-02",
+              "unchecked": false,
+              "value": "2010-02",
+            },
+            1,
+          ],
+          Array [
+            "2010-03",
+            Object {
+              "id": "2010-03",
+              "marker": Object {
+                "spacing": 8,
+                "style": Object {
+                  "fill": "#5D7092",
+                  "r": 4.5,
+                },
+                "symbol": "circle",
+              },
+              "name": "2010-03",
+              "unchecked": false,
+              "value": "2010-03",
+            },
+            2,
+          ],
+          Array [
+            "2010-01",
+            Object {
+              "id": "2010-01",
+              "marker": Object {
+                "spacing": 8,
+                "style": Object {
+                  "fill": "#5B8FF9",
+                  "r": 4.5,
+                },
+                "symbol": "circle",
+              },
+              "name": "2010-01",
+              "unchecked": false,
+              "value": "2010-01",
+            },
+            0,
+          ],
+          Array [
+            "2010-02",
+            Object {
+              "id": "2010-02",
+              "marker": Object {
+                "spacing": 8,
+                "style": Object {
+                  "fill": "#5AD8A6",
+                  "r": 4.5,
+                },
+                "symbol": "circle",
+              },
+              "name": "2010-02",
+              "unchecked": false,
+              "value": "2010-02",
+            },
+            1,
+          ],
+          Array [
+            "2010-03",
+            Object {
+              "id": "2010-03",
+              "marker": Object {
+                "spacing": 8,
+                "style": Object {
+                  "fill": "#5D7092",
+                  "r": 4.5,
+                },
+                "symbol": "circle",
+              },
+              "name": "2010-03",
+              "unchecked": false,
+              "value": "2010-03",
+            },
+            2,
+          ],
+        ],
+        "results": Array [
+          Object {
+            "type": "return",
+            "value": "2010-01%",
+          },
+          Object {
+            "type": "return",
+            "value": "2010-02%",
+          },
+          Object {
+            "type": "return",
+            "value": "2010-03%",
+          },
+          Object {
+            "type": "return",
+            "value": "2010-01%",
+          },
+          Object {
+            "type": "return",
+            "value": "2010-02%",
+          },
+          Object {
+            "type": "return",
+            "value": "2010-03%",
+          },
+        ],
+      },
+      "style": Object {
+        "fill": "pink",
+        "stroke": "pink",
+      },
+    },
+    "title": Object {
+      "style": Object {
+        "fill": "red",
+      },
+      "text": "legend title",
+    },
+  },
+  "padding": Array [
+    90,
+    90,
+    90,
+    90,
+  ],
+  "renderer": "canvas",
+  "sectorStyle": Object {
+    "lineWidth": 1,
+    "stroke": "#fff",
+  },
+  "seriesField": "Date",
+  "tooltip": Object {
+    "shared": true,
+    "showMarkers": false,
+  },
+  "width": 600,
+  "xAxis": false,
+  "xField": "Date",
+  "yAxis": false,
+  "yField": "scales",
+}
+`;
+
+exports[`Plots-RoseChart tooltip-玫瑰图 1`] = `
+Object {
+  "animation": true,
+  "appendPadding": Array [
+    10,
+    5,
+    10,
+    10,
+  ],
+  "autoFit": true,
+  "data": Array [
+    Object {
+      "Date": "2010-01",
+      "scales": 1998,
+    },
+    Object {
+      "Date": "2010-02",
+      "scales": 1250,
+    },
+    Object {
+      "Date": "2010-03",
+      "scales": 1720,
+    },
+  ],
+  "height": 500,
+  "interactions": Array [
+    Object {
+      "type": "active-region",
+    },
+  ],
+  "label": Object {
+    "layout": Object {
+      "type": "limit-in-shape",
+    },
+  },
+  "legend": Object {
+    "position": "right",
+  },
+  "padding": Array [
+    90,
+    90,
+    90,
+    90,
+  ],
+  "renderer": "canvas",
+  "sectorStyle": Object {
+    "lineWidth": 1,
+    "stroke": "#fff",
+  },
+  "seriesField": "Date",
+  "tooltip": Object {
+    "crosshairs": Object {
+      "type": "y",
+    },
+    "fields": Array [
+      "scales",
+    ],
+    "offset": 10,
+    "shared": true,
+    "showCrosshairs": true,
+    "showMarkers": false,
+    "visible": true,
+  },
+  "width": 600,
+  "xAxis": false,
+  "xField": "Date",
+  "yAxis": false,
+  "yField": "scales",
+}
+`;
+
+exports[`Plots-RoseChart 基础玫瑰图 1`] = `
+Object {
+  "animation": true,
+  "appendPadding": Array [
+    10,
+    5,
+    10,
+    10,
+  ],
+  "autoFit": true,
+  "color": [Function],
+  "data": Array [
+    Object {
+      "Date": "2010-01",
+      "scales": 1998,
+    },
+    Object {
+      "Date": "2010-02",
+      "scales": 1250,
+    },
+    Object {
+      "Date": "2010-03",
+      "scales": 1720,
+    },
+  ],
+  "height": 500,
+  "innerRadius": 0.1,
+  "interactions": Array [
+    Object {
+      "type": "active-region",
+    },
+  ],
+  "label": Object {
+    "layout": Object {
+      "type": "limit-in-shape",
+    },
+  },
+  "legend": Object {
+    "position": "right",
+  },
+  "meta": Object {
+    "date": Object {
+      "formatter": [Function],
+    },
+  },
+  "padding": Array [
+    90,
+    90,
+    90,
+    90,
+  ],
+  "pixelRatio": 3,
+  "radius": 0.5,
+  "renderer": "svg",
+  "sectorStyle": Object {
+    "lineDash": Array [
+      5,
+      5,
+    ],
+    "lineWidth": 1,
+    "stroke": "black",
+  },
+  "seriesField": "Date",
+  "tooltip": Object {
+    "shared": true,
+    "showMarkers": false,
+  },
+  "width": 600,
+  "xAxis": false,
+  "xField": "Date",
+  "yAxis": false,
+  "yField": "scales",
+}
+`;
+
+exports[`Plots-RoseChart 新版本玫瑰图xField*yField*seriesFieldte 1`] = `
+Object {
+  "animation": true,
+  "appendPadding": Array [
+    10,
+    5,
+    10,
+    10,
+  ],
+  "autoFit": true,
+  "data": Array [
+    Object {
+      "Date": "2010-01",
+      "scales": 1998,
+    },
+    Object {
+      "Date": "2010-02",
+      "scales": 1250,
+    },
+    Object {
+      "Date": "2010-03",
+      "scales": 1720,
+    },
+  ],
+  "height": 500,
+  "interactions": Array [
+    Object {
+      "type": "active-region",
+    },
+  ],
+  "label": Object {
+    "layout": Object {
+      "type": "limit-in-shape",
+    },
+  },
+  "legend": Object {
+    "position": "right",
+  },
+  "padding": Array [
+    90,
+    90,
+    90,
+    90,
+  ],
+  "renderer": "canvas",
+  "sectorStyle": Object {
+    "lineWidth": 1,
+    "stroke": "#fff",
+  },
+  "seriesField": "Date",
+  "tooltip": Object {
+    "shared": true,
+    "showMarkers": false,
+  },
+  "width": 600,
+  "xAxis": false,
+  "xField": "Date",
+  "yAxis": false,
+  "yField": "scales",
+}
+`;
+
+exports[`Plots-RoseChart 老版本玫瑰图categoryField*radiusField*Date 1`] = `
+Object {
+  "animation": true,
+  "appendPadding": Array [
+    10,
+    5,
+    10,
+    10,
+  ],
+  "autoFit": true,
+  "categoryField": "Date",
+  "colorField": "Date",
+  "data": Array [
+    Object {
+      "Date": "2010-01",
+      "scales": 1998,
+    },
+    Object {
+      "Date": "2010-02",
+      "scales": 1250,
+    },
+    Object {
+      "Date": "2010-03",
+      "scales": 1720,
+    },
+  ],
+  "height": 500,
+  "interactions": Array [
+    Object {
+      "type": "active-region",
+    },
+  ],
+  "label": Object {
+    "layout": Object {
+      "type": "limit-in-shape",
+    },
+  },
+  "legend": Object {
+    "position": "right",
+  },
+  "padding": Array [
+    90,
+    90,
+    90,
+    90,
+  ],
+  "radiusField": "scales",
+  "renderer": "canvas",
+  "sectorStyle": Object {
+    "lineWidth": 1,
+    "stroke": "#fff",
+  },
+  "seriesField": "Date",
+  "tooltip": Object {
+    "shared": true,
+    "showMarkers": false,
+  },
+  "width": 600,
+  "xAxis": false,
+  "xField": "Date",
+  "yAxis": false,
+  "yField": "scales",
+}
+`;
