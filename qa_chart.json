@@ -10,6 +10,13 @@
 	{"count":35,"platform":"Neusoft","rate":92.98,"sum":3254.26,"week":44},
 	{"count":35,"platform":"Neusoft","rate":92.36,"sum":3232.55,"week":45},
 	{"count":35,"platform":"Neusoft","rate":92.63,"sum":3242.04,"week":46}
+],
+
+"gdMonthTrend":[
+	{"count":81,"month":"9月","platform":"Neusoft","rate":90.52,"sum":7331.98},
+	{"count":138,"month":"10月","platform":"Neusoft","rate":92.69,"sum":12790.79},
+	{"count":63,"month":"11月","platform":"Neusoft","rate":92.89,"sum":5852.36},
+	{"count":0,"month":"Target","platform":"Neusoft","rate":92,"sum":0}
 ]
 		
 }

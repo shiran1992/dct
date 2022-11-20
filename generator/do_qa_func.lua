@@ -42,12 +42,50 @@ function handle_week_trend()
 	end
 end
 handle_week_trend()
+
+-- 东软每月趋势
+gdMonthTrend = {}
+function handle_month_trend()
+	local monthData = {}
+	for k, v in pairs(gdRecord) do
+		if v.platform == 1 then
+			local date = os.date("*t", v.qaTime)
+			if not monthData[date.month] then
+				monthData[date.month] = {}
+			end
+			table.insert(monthData[date.month], v)
+		end
+	end
+	
+	for k = 1, 12, 1 do
+		local v = monthData[k]
+		if v then
+			local monthCount = {month = k .. "月", platform = gdEnumPlatform[1], count = 0, sum = 0, rate = 0}
+			for kk, vv in pairs(v) do
+				monthCount.count = monthCount.count + 1
+				monthCount.sum = monthCount.sum + vv.rate
+			end
+			if monthCount.count > 0 then
+				monthCount.rate = tonumber(string.format("%.2f", monthCount.sum / monthCount.count))
+			end
+			table.insert(gdMonthTrend, monthCount)
+		end
+	end
+
+	table.insert(gdMonthTrend, {month = "Target", platform = gdEnumPlatform[1], count = 0, sum = 0, rate = 92})
+end
+handle_month_trend()
 --------------------------------------------   function end     ---------------------------------------------------
 
 file:write([[
 
 "gdWeekTrend":]])
-output_json(gdWeekTrend, file)
+output_json(gdWeekTrend, file, ",")
+
+file:write([[
+
+"gdMonthTrend":]])
+output_json(gdMonthTrend, file)
 
 
 

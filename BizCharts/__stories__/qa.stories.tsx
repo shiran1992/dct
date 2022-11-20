@@ -7,10 +7,11 @@ import colorBlock from '../demos/area/colorBlock';
 import intervalArea from '../demos/area/intervalArea';
 import percentStackingArea from '../demos/area/percentStackingArea';
 import stackingArea from '../demos/area/stackingArea';
-import ordinaryCurve from '../demos/line/ordinaryCurve';
+import weekTrend from '../demos/qa/weekTrend';
+import monthTrend from '../demos/qa/monthTrend';
 
-storiesOf('如果新能源QA', module).add('Neusoft Chat Weekly Trend', ordinaryCurve);
-storiesOf('如果新能源QA', module).add('基础面积图', basicArea);
+storiesOf('如果新能源QA', module).add('Neusoft Chat Weekly Trend', weekTrend);
+storiesOf('如果新能源QA', module).add('Neusoft Chat Monthly Trend', monthTrend);
 storiesOf('如果新能源QA', module).add('有负值的基础面积图', basicAreaWithNegativeValues);
 storiesOf('如果新能源QA', module).add('色块图', colorBlock);
 storiesOf('如果新能源QA', module).add('区间面积图', intervalArea);
